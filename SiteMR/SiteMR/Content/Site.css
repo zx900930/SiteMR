@@ -36,3 +36,68 @@ input[type="select"] {
         padding: 0;
     }
 }
+
+/*drop down menu*/
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Slide*/
+.slide ul{
+     display: table;
+     width:2700px;
+     -webkit-animation: slideAnim 20s ease 0s infinite;
+        -moz-animation: slideAnim 20s ease 0s infinite;
+         -ms-animation: slideAnim 20s ease 0s infinite;
+          -o-animation: slideAnim 20s ease 0s infinite;
+             animation: slideAnim 20s ease 0s infinite;
+}
+
+.slide ul li{
+     display: table-cell;
+     width:300px;
+}
+
+@keyframes slideAnim{
+from,11%,to {margin-left:-300px;}
+15%,26%{margin-left:-600px;}
+30%,41%{margin-left:-900px;}
+45%,56%{margin-left:-1200px;}
+65%,76%{margin-left:-1500px;}
+80%,91%{margin-left:-1800px;}
+99.99%{margin-left:-2100px;}
+}
